@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header nav{
+    background-color: black;
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 120px;
+  position: fixed;
+  z-index: 40;
+}
+header nav h2
+{
+  color: white;
+  font-size: 22px;
+}
+header nav .right-side .link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   list-style: none;
+   color: white;
+   font-size: 20px;
+}
+header nav .right-side .link li
+{
+  margin: 0 15px;
+}
+header nav .right-side .link li a
+{
+  text-decoration: none;
+  color: white;
+}
+/*````````````navbar2```````````````*/
+.navbar2{
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+padding: 10px 120px;
+
+}
+#menu-toggle{
+  display: none;
+ 
+}
+.side-bar{
+  display: none;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute; 
+   padding: 30px 20px;
+  top:0;
+  right: 0;
+  background-color: black;
+  width: 100%;
+}
+.links-nav2{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+ gap: 10px;
+ padding: 10px;
+}
+.side-bar .icon-nave{
+align-self: center;
+
+}
+#menu-toggle:checked ~ .side-bar{
+  display: flex;
+ 
+}
+.a{
+  color: white;
+  padding: 10px;
+}
+/*````````````````hero````````````````````*/
+.hero {
+    background-color:hsl(168.15deg 75.7% 41.96%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height:100vh ;
+}
+.radio{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: hsl(210deg 29.03% 24.31%);
+   position: relative; 
+   margin: 0 auto;
+   z-index: 1;
+}
+
+.radio img{
+   width: 100%;
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform:translate(-50%, -50%);  
+ border-radius:0 0 50% 50% ; 
+}
+.hero h1{
+  padding: 10px;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+.hero p{
+  padding: 10px;
+  color: white;
+  font-size: 23px; 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.container .line {
+  margin: 0px 10px;
+  width: 30%;
+  border-bottom: 3px solid white;
+}
+.container i{
+  color: white;
+  font-size: 20px;
+}
+/*-----------------PORTFOlIO-----------------------*/
+.PORTFOlIO ,.content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content:center ;
+  justify-items: center;
+  text-align: center;
+}
+.PORTFOlIO h3 ,.content h3{
+  margin-top: 15px;
+  font-size: 22px;
+}
+.PORTFOlIO .line, .content  .line{
+  width: 45px;
+  border-bottom: 3px solid black;
+}
+.PORTFOlIO  i ,.content i{
+color: black;
+}
+/*-----------------card-----------------------*/
+.allcard{
+ flex-wrap: wrap;
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+}
+.card{
+  width: 65%;
+  margin: 15px 5%;
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+ flex-wrap: wrap;
+  gap: 15px;
+}
+.cardfirst{
+  background-color: hsl(347.45deg 44.35% 51.37%);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  width: 150px;
+  background-color:hsl(162.97deg 51.39% 28.24%) ;
+ border-radius: 50%;
+}
+.circle img{
+  width: 100%;
+  padding: 8px;
+
+}
+.css{
+ background-color: hsl(187.15deg 70.89% 41.76%); 
+}
+.css .circle{
+  background-color: hsl(7.15deg 70.89% 58.24%);
+}
+.js{
+background-color:hsl(0deg 11.76% 6.67%); ;
+}
+.js .circle{
+background-color: hsl(180deg 11.76% 93.33%);
+}
+.jq{
+background-color: hsl(202.68deg 73.87% 43.53%);
+}
+.jq .circle{
+background-color: hsl(22.68deg 73.87% 56.47%);
+}
+.git{
+  background-color:hsl(225.82deg 83.76% 38.63%) 
+  }
+  .git .circle{
+  background-color: hsl(45.82deg 83.76% 61.37%);
+  }
+  .reac{
+    background-color:hsl(21.95deg 28.67% 71.96%); 
+    }
+    .reac .circle{
+    background-color: hsl(201.95deg 28.67% 28.04%);
+    }
+    /*``````````````````````````about``````````````````````````````*/
+    .About{
+      width: 100%;
+      background-color:hsl(168.15deg 75.7% 41.96%);
+      display: flex;
+      justify-items: center;
+      align-content: center;
+      flex-direction: column;
+
+    }
+    .About h3{
+ margin-top: 15px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+    }
+    .About .line{
+      width: 50px;
+    }
+    .text{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 5%; 
+      flex-wrap: wrap;
+
+    }
+     .textone,.text-two {
+      width: 25%;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+ 
+    .text p{
+      color: white;
+      padding: 10px;
+      font-size: 18px;
+    }
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  width: 180px;
+  margin: 20px auto;
+  padding: 15px;
+
+
+}
+.button i , p{
+ color: white;
+margin: 5px;
+}
+
+/*````````````````Contect````````````````````*/
+form{
+  display: flex;
+  flex-direction: column;
+  justify-items:center ;
+  align-content: center;
+  margin: 20px;
+}
+form input, textarea{
+  border: none;
+  width: 300px;
+  border-bottom: 2px solid rgb(245, 232, 232);
+  padding: 10px;
+  margin: 10px;
+}
+textarea{
+  padding: 20px;
+}
+button{
+  background-color:hsl(168.15deg 75.7% 41.96%);
+  color: white;
+  width: 100px;
+margin-left: 20px;
+padding: 10px;
+border: none;
+
+}
+.foot{
+  width: 100%;
+  background-color: hsl(210deg 29.03% 24.31%);
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.fren{
+  display: flex;
+  flex-direction: column;
+ width: 20%;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: 20px;
+  
+
+}
+.fren h4 .AROUND h4 ,.AROUND h4{
+  font-size: 18px;
+ text-align: center;
+}
+.fren p{
+  font-size: 16px;
+  padding: 10px;
+
+}
+
+.AROUND .icon{
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+gap: 10px;
+
+}
+.icon .icon-f{
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+}
+.icon-f i{
+  color: white;
+ text-align: center; 
+}
+span a{
+  color: green;
+}
+footer{
+  background-color: black;
+  width: 100%;
+  padding: 15px;
+
+ color: white;
+  text-align: center;
+}
+
+
+
+@media(max-width:992px){
+  .navbar{
+   display: none;
+  }
+  .navbar2 {
+    display: flex;
+  } 
+  .navbar2 .left-side h2 ,.a{
+    font-size: 18px;
+  }
+
+.textone,.text-two ,.fren,.AROUND {
+  width: 55%;
+  font-size: 20px;
+}
+}
+@media(max-width:540px){
+  .navbar2 .left-side h2 ,.a{
+    font-size: 15px;
+  }
+  .hero h1{
+    font-size: 22px;
+  }
+.hero p
+  {
+    font-size: 17px;
+  }
+  .About h3 ,.PORTFOlIO h3 , .content h3{
+    font-size: 20px;
+  }
+  .textone,.text-two ,.fren,.AROUND{
+    width: 80%;
+    font-size: 18px;
+  }
+  .fren h4 .AROUND h4 ,.AROUND h4{
+    font-size: 16px;
+  }
+  .fren p{
+    font-size: 15px;
+  }
+ 
+}
